@@ -6,7 +6,13 @@ require.config({
         rv: 'loaders/rv',
         mapbox: 'lib/mapbox',
         jquery: 'lib/jquery-1.11',
-        jqueryui: 'lib/jquery_ui'
+        jqueryui: 'lib/jquery_ui',
+        pixl: 'lib/pixl'
+    }, 
+    shim: {
+    	"pixl": {
+    		deps: ["jquery"]
+    	}
     }
 });
 
